@@ -1,38 +1,149 @@
 .App {
-  text-align: center;
+  padding: 10px;
+  background-color: #888888;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.HeaderBtn {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  background-color: #4469ae;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.NewPost {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 0;
   display: flex;
   flex-direction: column;
+}
+
+.NewPostHeader {
+  position: relative;
+  border-bottom: 1px solid #88888873;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px;
+}
+
+.NewPostClose {
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: #ffffff;
+  color: #888888;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.NewPostForm {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.NewPostField {
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.NewPostFooter {
+  padding: 5px;
+  height: 40px;
+  border-top: 1px solid #88888873;
+  background-color: #88888838;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.NewPostBtn {
+  display: block;
+  text-decoration: none;
+  background-color: #4469ae;
+  border: none;
+  height: 100%;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.Post {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.PostHeader {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.PostAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #888888;
+}
+
+.PostText {
+  padding: 5px;
+}
+
+.PostFooter {
+  padding: 5px;
+  height: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid #88888873;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.PostEdit {
+  background-color: #4469ae;
+  border: none;
+  height: 100%;
+  color: white;
+  cursor: pointer;
+}
+
+.PostDelete {
+  background-color: #b04546;
+  border: none;
+  height: 100%;
+  color: white;
+  cursor: pointer;
 }
